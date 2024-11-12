@@ -2,14 +2,21 @@ package com.pluralsight;
 
 public class Topping {
     private String name;
-    private double cost;
+    private String type;
+    private double baseCost;
 
-    public Topping(String name, double cost) {
+    public Topping(String name, String type, double baseCost) {
         this.name = name;
-        this.cost = cost;
+        this.type = type;
+        this.baseCost = baseCost;
     }
 
     public double getCost() {
-        return cost;
+        return baseCost;
+    }
+
+    // Get topping details for display
+    public String getDetails() {
+        return name + " (" + type + ")";
     }
 }

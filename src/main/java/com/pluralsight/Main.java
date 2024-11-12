@@ -3,10 +3,10 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        boolean running = true;
+    private static Scanner scanner = new Scanner(System.in);
 
+    public static void main(String[] args) {
+        boolean running = true;
         while (running) {
             System.out.println("Welcome to DELI-cious");
             System.out.println("1) New Order");
@@ -15,33 +15,58 @@ public class Main {
             scanner.nextLine(); // Clear newline
 
             switch (choice) {
-                case 1:
-                    startNewOrder();
-                    break;
-                case 0:
-                    running = false;
-                    System.out.println("Thank you for using DELI-cious!");
-                    break;
-                default:
-                    System.out.println("Invalid choice. Try again.");
-                    break;
+                case 1 -> startNewOrder();
+                case 0 -> running = false;
+                default -> System.out.println("Invalid choice. Try again.");
             }
         }
-        scanner.close();
     }
 
     private static void startNewOrder() {
         Order order = new Order();
-        System.out.println("New order started.");
+        boolean ordering = true;
 
-        // Simple placeholder - Add Sandwich and Drink
-        Sandwich sandwich = new Sandwich("8\"", "White");
-        Drink drink = new Drink("Small", 2.00);
+        while (ordering) {
+            System.out.println("1) Add Sandwich");
+            System.out.println("2) Add Drink");
+            System.out.println("3) Add Chips");
+            System.out.println("4) Checkout");
+            System.out.println("0) Cancel Order");
 
-        order.addSandwich(sandwich);
-        order.addDrink(drink);
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
-        System.out.println("Order total: $" + order.calculateTotal());
-        System.out.println("Order complete.");
+            switch (choice) {
+                case 1 -> addSandwich(order);
+                case 2 -> addDrink(order);
+                case 3 -> addChips(order);
+                case 4 -> checkout(order);
+                case 0 -> ordering = false;
+                default -> System.out.println("Invalid choice. Try again.");
+            }
+        }
+    }
+
+    private static void addSandwich(Order order) {
+        // Placeholder to add sandwich logic
+        System.out.println("Adding sandwich...");
+    }
+
+    private static void addDrink(Order order) {
+        // Placeholder to add drink logic
+        System.out.println("Adding drink...");
+    }
+
+    private static void addChips(Order order) {
+        // Placeholder to add chips logic
+        System.out.println("Adding chips...");
+    }
+
+    private static void checkout(Order order) {
+        System.out.println("Checking out...");
+        System.out.println("Order Total: $" + order.calculateTotal());
+//        Receipt receipt = new Receipt(order);
+//        receipt.saveReceipt();
+        System.out.println("Receipt saved.");
     }
 }

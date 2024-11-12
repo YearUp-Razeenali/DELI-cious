@@ -12,4 +12,9 @@ public class Drink {
     public double getPrice() {
         return price;
     }
+
+    // Get drink details for display
+    public String getDetails() {
+        return "Size: " + size + ", Price: $" + price;
+    }
 }
