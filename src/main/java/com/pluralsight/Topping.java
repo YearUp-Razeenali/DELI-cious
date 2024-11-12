@@ -1,9 +1,10 @@
 package com.pluralsight;
 
 public class Topping {
-    private String name;
-    private String type;
-    private double baseCost;
+    private String name;        // Name of the topping
+    private String type;        // Type (e.g., "Regular", "Premium")
+    private double baseCost;    // Cost of the topping
+
 
     public Topping(String name, String type, double baseCost) {
         this.name = name;
@@ -11,12 +12,27 @@ public class Topping {
         this.baseCost = baseCost;
     }
 
+
+    public Topping(String name, double baseCost) {
+        this(name, "Regular", baseCost); // Calls the primary constructor with "Regular" as the default type
+    }
+
+
     public double getCost() {
         return baseCost;
     }
 
-    // Get topping details for display
+
     public String getDetails() {
         return name + " (" + type + ")";
+    }
+
+        public String getName() {
+        return name;
+    }
+
+
+    public String getType() {
+        return type;
     }
 }

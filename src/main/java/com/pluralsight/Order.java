@@ -26,7 +26,6 @@ public class Order {
         chips.add(chipType);
     }
 
-    // Calculate the total price of the order
     public double calculateTotal() {
         double total = 0.0;
         for (Sandwich sandwich : sandwiches) {
@@ -35,13 +34,23 @@ public class Order {
         for (Drink drink : drinks) {
             total += drink.getPrice();
         }
-        total += chips.size() * 1.5;
+        total += chips.size() * 1.5; // Assuming each chip costs $1.50
         return total;
     }
 
-    // Get order details for display
     public String getOrderDetails() {
-        // Placeholder to return order summary
-        return "Order summary...";
+        StringBuilder details = new StringBuilder("Order Details:\n");
+
+        for (Sandwich sandwich : sandwiches) {
+            details.append("Sandwich: ").append(sandwich.getDetails()).append("\n");
+        }
+        for (Drink drink : drinks) {
+            details.append("Drink: ").append(drink.getDetails()).append("\n");
+        }
+        for (String chip : chips) {
+            details.append("Chips: ").append(chip).append("\n");
+        }
+
+        return details.toString();
     }
 }

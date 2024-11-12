@@ -25,13 +25,26 @@ public class Sandwich {
     }
 
     public double calculatePrice() {
-        // Placeholder for price calculation logic
-        return 0.0;
+        double basePrice = switch (size) {
+            case "4" -> 5.50;
+            case "8" -> 7.00;
+            case "12" -> 8.50;
+            default -> 0.0;
+        };
+
+        // Add cost for premium toppings
+        for (Topping topping : toppings) {
+            basePrice += topping.getCost();
+        }
+        return basePrice;
     }
 
-    // Get sandwich details for display
     public String getDetails() {
-        // Placeholder to return sandwich details
-        return "Size: " + size + ", Bread: " + breadType;
+        StringBuilder details = new StringBuilder("Size: " + size + ", Bread: " + breadType + ", Toppings: ");
+        for (Topping topping : toppings) {
+            details.append(topping.getName()).append(", ");
+        }
+        details.append(isToasted ? "Toasted" : "Not Toasted");
+        return details.toString();
     }
 }
