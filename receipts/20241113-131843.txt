@@ -1,0 +1,9 @@
+Order Receipt
+Timestamp: 20241113-131843
+Order Details:
+Chips: Type: BBQ, Price: $1.50
+Chips: Type: BBQ, Price: $1.50
+Chips: Type: BBQ, Price: $1.50
+Chips: Type: askdasjk, Price: $1.50
+Chips: Type: askdasjk, Price: $1.50
+Total: $7.5

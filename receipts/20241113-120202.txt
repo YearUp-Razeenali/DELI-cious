@@ -1,0 +1,6 @@
+Order Receipt
+Timestamp: 20241113-120202
+Order Details:
+Sandwich: Size: 4, Bread: white, Toppings: steak (Meat), American (Cheese), Toasted
+Sandwich: Size: 8, Bread: rye, Toppings: Ham (Meat), cheddar (Cheese), lettuce (Regular), mayo (Sauce), Not Toasted
+Total: $12.5

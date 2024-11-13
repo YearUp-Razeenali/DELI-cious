@@ -1,0 +1,7 @@
+Order Receipt
+Timestamp: 20241113-135429
+Order Details:
+Sandwich: Size: 12, Bread: Rye, Toppings: Steak (Meat), Swiss (Cheese), Lettuce (Regular), Pickles (Regular), Mayo (Sauce), Ketchup (Sauce), Not Toasted
+Drink: Size: Large, Price: $3.00
+Chips: Type: BBQ, Price: $1.50
+Total: $13.0

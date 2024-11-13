@@ -6,7 +6,7 @@ import java.util.List;
 public class Order {
     private List<Sandwich> sandwiches;
     private List<Drink> drinks;
-    private List<Chips> chips; // Change from List<String> to List<Chips>
+    private List<Chips> chips;
 
     public Order() {
         this.sandwiches = new ArrayList<>();
@@ -22,7 +22,7 @@ public class Order {
         drinks.add(drink);
     }
 
-    public void addChips(Chips chip) { // Accept a Chips object, not String
+    public void addChips(Chips chip) {
         chips.add(chip);
     }
 
