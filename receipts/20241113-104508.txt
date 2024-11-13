@@ -1,6 +1,0 @@
-Order Receipt
-Timestamp: 20241113-104508
-Order Details:
-Drink: Size: Small, Price: $2.00
-Drink: Size: Small, Price: $2.00
-Total: $4.0

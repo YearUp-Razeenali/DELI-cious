@@ -193,7 +193,7 @@ public class Main {
         while (quantity <= 0) {
             System.out.println("Please enter a positive quantity:");
             quantity = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine();
         }
 
         // Step 3: Add the specified quantity of drinks to the order
@@ -206,10 +206,47 @@ public class Main {
     }
 
     private static void addChips(Order order) {
-        System.out.println("Enter chip type (e.g., BBQ, Sour Cream): ");
+        // Display chip options with a flat price
+        System.out.println("Select chip type (All chips are $1.50):");
+        System.out.println("- BBQ");
+        System.out.println("- Sour Cream");
+        System.out.println("- Salted");
+        System.out.println("- Cheddar");
+        System.out.println("- Jalapeno");
+
+        // Step 1: Ask for the chip type
+        System.out.println("Enter your choice (BBQ, Sour Cream, Salted, Cheddar, Jalapeno): ");
         String chipType = scanner.nextLine();
 
-        order.addChips(chipType);
+        // Validate chip type choice
+        while (!chipType.equalsIgnoreCase("BBQ") &&
+                !chipType.equalsIgnoreCase("Sour Cream") &&
+                !chipType.equalsIgnoreCase("Salted") &&
+                !chipType.equalsIgnoreCase("Cheddar") &&
+                !chipType.equalsIgnoreCase("Jalapeno")) {
+            System.out.println("Invalid choice. Please select a valid chip type.");
+            chipType = scanner.nextLine();
+        }
+
+        // Step 2: Ask for the quantity
+        System.out.println("How many bags of " + chipType + " chips would you like to add?");
+        int quantity = scanner.nextInt();
+        scanner.nextLine(); // Clear newline
+
+        // Validate quantity input
+        while (quantity <= 0) {
+            System.out.println("Please enter a positive quantity:");
+            quantity = scanner.nextInt();
+            scanner.nextLine(); // Clear newline
+        }
+
+        // Step 3: Add the specified quantity of chips to the order
+        for (int i = 0; i < quantity; i++) {
+            Chips chip = new Chips(chipType); // Create a Chips object
+            order.addChips(chip); // Add Chips object to the order, not a String
+        }
+
+        System.out.println("Added " + quantity + " bag(s) of " + chipType + " chips to the order.");
     }
 
     private static void checkout(Order order) {

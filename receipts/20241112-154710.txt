@@ -1,5 +1,0 @@
-Order Receipt
-Timestamp: 20241112-154710
-Order Details:
-Sandwich: Size: 4, Bread: White, Toppings: Steak (Meat), Ham (Meat), Salami (Meat), American (Cheese), Cheddar (Cheese), lettuce (Regular), Toasted
-Total: $5.5

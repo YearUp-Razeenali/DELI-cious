@@ -1,5 +1,0 @@
-Order Receipt
-Timestamp: 20241112-154224
-Order Details:
-Sandwich: Size: 4, Bread: rye, Toppings: Salami (Meat), steak (Meat), American (Cheese), Provolone (Cheese), Lettuce (Regular), Peppers (Regular), onions (Regular), Mayo (Sauce), Toasted
-Total: $5.5

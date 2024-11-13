@@ -1,6 +1,0 @@
-Order Receipt
-Timestamp: 20241112-160135
-Order Details:
-Sandwich: Size: 4, Bread: White, Toppings: Steak (Meat), Swiss (Cheese), Lettuce (Regular), Peppers (Regular), onions (Regular), Mayo (Sauce), Mustard (Sauce), Not Toasted
-Drink: Size: Small, Price: $2.0
-Total: $7.5

@@ -6,7 +6,7 @@ import java.util.List;
 public class Order {
     private List<Sandwich> sandwiches;
     private List<Drink> drinks;
-    private List<String> chips;
+    private List<Chips> chips; // Change from List<String> to List<Chips>
 
     public Order() {
         this.sandwiches = new ArrayList<>();
@@ -22,19 +22,23 @@ public class Order {
         drinks.add(drink);
     }
 
-    public void addChips(String chipType) {
-        chips.add(chipType);
+    public void addChips(Chips chip) { // Accept a Chips object, not String
+        chips.add(chip);
     }
 
     public double calculateTotal() {
         double total = 0.0;
+
         for (Sandwich sandwich : sandwiches) {
             total += sandwich.calculatePrice();
         }
         for (Drink drink : drinks) {
             total += drink.getPrice();
         }
-        total += chips.size() * 1.5;
+        for (Chips chip : chips) {
+            total += chip.getPrice();
+        }
+
         return total;
     }
 
@@ -47,8 +51,8 @@ public class Order {
         for (Drink drink : drinks) {
             details.append("Drink: ").append(drink.getDetails()).append("\n");
         }
-        for (String chip : chips) {
-            details.append("Chips: ").append(chip).append("\n");
+        for (Chips chip : chips) {
+            details.append("Chips: ").append(chip.getDetails()).append("\n");
         }
 
         return details.toString();

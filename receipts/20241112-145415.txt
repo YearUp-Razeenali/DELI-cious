@@ -1,7 +1,0 @@
-Order Receipt
-Timestamp: 20241112-145415
-Order Details:
-Sandwich: Size: 8, Bread: White, Toppings: Toasted
-Drink: Size: Large, Price: $3.0
-Chips: BBQ
-Total: $11.5
