@@ -34,7 +34,7 @@ public class Order {
         for (Drink drink : drinks) {
             total += drink.getPrice();
         }
-        total += chips.size() * 1.5; // Assuming each chip costs $1.50
+        total += chips.size() * 1.5;
         return total;
     }
 

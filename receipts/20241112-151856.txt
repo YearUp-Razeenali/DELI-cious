@@ -1,0 +1,5 @@
+Order Receipt
+Timestamp: 20241112-151856
+Order Details:
+Sandwich: Size: 4, Bread: white, Toppings: Meat (Regular), Toasted
+Total: $5.5
