@@ -46,13 +46,13 @@ public class Order {
         StringBuilder details = new StringBuilder("Order Details:\n");
 
         for (Sandwich sandwich : sandwiches) {
-            details.append("Sandwich: ").append(sandwich.getDetails()).append("\n");
+            details.append("Sandwich: \n").append(sandwich.getDetails()).append("\n");
         }
         for (Drink drink : drinks) {
-            details.append("Drink: ").append(drink.getDetails()).append("\n");
+            details.append("Drink: \n").append(drink.getDetails()).append("\n");
         }
         for (Chips chip : chips) {
-            details.append("Chips: ").append(chip.getDetails()).append("\n");
+            details.append("Chips: \n").append(chip.getDetails()).append("\n");
         }
 
         return details.toString();

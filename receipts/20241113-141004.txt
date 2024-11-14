@@ -1,0 +1,7 @@
+Order Receipt
+Timestamp: 20241113-141004
+Order Details:
+Sandwich: Size: 8, Bread: White, Toppings: Steak (Meat), American (Cheese), Lettuce (Regular), Peppers (Regular), Mayo (Sauce), Toasted
+Drink: Size: Small, Price: $2.00
+Drink: Size: Small, Price: $2.00
+Total: $11.0

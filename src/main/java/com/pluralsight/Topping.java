@@ -49,6 +49,10 @@ public class Topping {
         return 0.0;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public String getDetails() {
         return name + " (" + type + ")";
     }

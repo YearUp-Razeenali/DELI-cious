@@ -35,8 +35,9 @@ public class UserInterface {
             System.out.println("1) Add Sandwich");
             System.out.println("2) Add Drink");
             System.out.println("3) Add Chips");
-            System.out.println("4) Checkout");
+            System.out.println("4) Add Signature Sandwich");
             System.out.println("5) List Order");
+            System.out.println("6) Checkout");
             System.out.println("0) Cancel Order");
 
             int choice = scanner.nextInt();
@@ -46,11 +47,12 @@ public class UserInterface {
                 case 1 -> new AddSandwichScreen(order).display();
                 case 2 -> new AddDrinkScreen(order).display();
                 case 3 -> new AddChipsScreen(order).display();
-                case 4 -> {
+                case 4 -> new SignatureSandwichScreen(order).display();
+                case 5 -> new ListOrderScreen(order).display();
+                case 6 -> {
                     new CheckoutScreen(order).display();
                     ordering = false;
                 }
-                case 5 -> new ListOrderScreen(order).display();
                 case 0 -> {
                     System.out.println("Order canceled.");
                     ordering = false;

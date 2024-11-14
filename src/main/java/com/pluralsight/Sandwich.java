@@ -6,7 +6,7 @@ import java.util.List;
 public class Sandwich {
     private String size;
     private String breadType;
-    private List<Topping> toppings;
+    protected List<Topping> toppings;
     private boolean isToasted;
 
     // Default base prices by sandwich size
@@ -23,6 +23,14 @@ public class Sandwich {
 
     public void addTopping(Topping topping) {
         toppings.add(topping);
+    }
+
+    public void removeTopping(String toppingName) {
+        toppings.removeIf(t -> t.getName().equalsIgnoreCase(toppingName));
+    }
+
+    public List<Topping> getToppings() {
+        return toppings;
     }
 
     public void setToasted(boolean toasted) {
