@@ -1,0 +1,22 @@
+Order Receipt
+Timestamp: 20241115-120122
+Order Details:
+Sandwich: 
+Size: 4, Bread: White, Toppings: Steak (Meat), American (Cheese), Lettuce (Regular), Onions (Regular), Mayo (Sauce), Toasted
+Sandwich: 
+Size: 8, Bread: White, Toppings: Chicken (Meat), Swiss (Cheese), Not Toasted
+Drink: 
+Size: Large, Price: $3.00
+Drink: 
+Size: Large, Price: $3.00
+Chips: 
+Type: BBQ, Price: $1.50
+Chips: 
+Type: BBQ, Price: $1.50
+Chips: 
+Type: BBQ, Price: $1.50
+Chips: 
+Type: BBQ, Price: $1.50
+Chips: 
+Type: BBQ, Price: $1.50
+Total: $26.0

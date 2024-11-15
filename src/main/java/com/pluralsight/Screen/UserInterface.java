@@ -63,7 +63,7 @@ public class UserInterface {
                 }
                 case 6 -> {
                     DisplayUtils.printTextBlock(DisplayUtils.CHECKOUT_SUMMARY_HEADER);  // Show checkout summary header
-                    new ListOrderScreen(order).display();  // Display order details as part of checkout
+                    new CheckoutScreen(order).display();  // Display order details as part of checkout
                     DisplayUtils.printTextBlock(DisplayUtils.THANK_YOU_MESSAGE);  // Show thank you message after checkout
                     ordering = false;
                 }
