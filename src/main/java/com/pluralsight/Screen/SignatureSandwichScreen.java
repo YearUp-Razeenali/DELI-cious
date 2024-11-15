@@ -1,9 +1,9 @@
 package com.pluralsight.Screen;
 
 import com.pluralsight.Order;
-import com.pluralsight.BLT;
-import com.pluralsight.PhillyCheeseSteak;
-import com.pluralsight.Sandwich;
+import com.pluralsight.Sandwiches.BLT;
+import com.pluralsight.Sandwiches.PhillyCheeseSteak;
+import com.pluralsight.Sandwiches.Sandwich;
 import com.pluralsight.Topping;
 
 import java.util.Arrays;

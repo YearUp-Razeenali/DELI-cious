@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.Sandwiches;
+
+import com.pluralsight.Topping;
 
 public class PhillyCheeseSteak extends Sandwich {
 

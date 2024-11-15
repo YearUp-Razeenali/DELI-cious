@@ -1,0 +1,6 @@
+Order Receipt
+Timestamp: 20241114-140325
+Order Details:
+Sandwich: 
+Size: 8, Bread: White, Toppings: Bacon (Meat), American (Cheese), Toasted
+Total: $7.0
