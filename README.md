@@ -29,22 +29,22 @@ Below are screenshots of the different screens available in the DELI-cious appli
    ![Main Menu](images/main_menu.png)
 
 2. **Add Sandwich Screen**  
-   ![Add Sandwich](images/add_sandwich.png)
+   ![Add Sandwich](images/addSandwichmenu.png)
 
 3. **Add Drink Screen**  
-   ![Add Drink](images/add_drink.png)
+   ![Add Drink](images/addDrinkmenu.png)
 
 4. **Add Chips Screen**  
-   ![Add Chips](images/add_chips.png)
+   ![Add Chips](images/addChipmenu.png)
 
 5. **Add Signature Sandwich Screen**  
-   ![Signature Sandwich](images/add_signature_sandwich.png)
+   ![Signature Sandwich](images/addSignaturemenu.png)
 
 6. **Order Summary Screen**  
-   ![Order Summary](images/order_summary.png)
+   ![Order Summary](images/orderSummarymenu.png)
 
 7. **Checkout and Thank You Screen**  
-   ![Checkout](images/checkout_thank_you.png)
+   ![Checkout](images/checkoutmenu.png)
 
 ### Interesting Code Snippet
 
@@ -82,7 +82,7 @@ The **Class Diagram** shows the relationships between key classes, including:
 - **DisplayUtils**: Utility for displaying headers and text blocks in the console.
 - **Screen Classes**: Classes like `AddSandwichScreen`, `AddDrinkScreen`, `AddChipsScreen`, and `SignatureSandwichScreen` handle user interactions for each item.
 
-![Class Diagram](images/class_diagram.png)
+![Class Diagram](images/diagram.JPG)
 
 #### Flow Diagram
 The **Flow Diagram** outlines the user journey from the **Main Menu** to ordering customization and checkout.
@@ -91,7 +91,7 @@ The **Flow Diagram** outlines the user journey from the **Main Menu** to orderin
 - **New Order**: Allows adding sandwiches, drinks, chips, or signature sandwiches, listing the current order, or checking out.
 - **Checkout**: Displays an order summary and total, then ends with a thank-you message.
 
-![Flow Diagram](images/flow_diagram.png)
+![Flow Diagram](images/flowchart.png)
 
 ### Future Enhancements
 
